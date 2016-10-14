@@ -26,9 +26,10 @@ def pets():
 
 @app.route('/pets/<name>', methods=['GET'])
 def getPet(name):
+    print(petList);
     for pet in petList:
         if(pet['name'] == name):
-            return petList[name]
+            return jsonify(pet)
     return jsonify({'error' : 'Not in database'}), 404
 
 if __name__ == '__main__':
