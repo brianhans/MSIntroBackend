@@ -4,7 +4,7 @@ import urllib
 import traceback
 from twilio.rest import TwilioRestClient
 
-***REMOVED***
+GOOGLE_API_KEY = "AIzaSyC0XYY3AWKWKQlQbwm1mzI0-K4_CoFCCrk"
 BASE_URL = "https://www.googleapis.com/language/translate/v2?key=" + GOOGLE_API_KEY
 
 account = "AC29ca8fb35cc8081dc377c648d385b9d0"
