@@ -1,1 +1,8 @@
-{}
+{
+  "test_server.py::FlaskServerTest::test_delPet": true, 
+  "test_server.py::FlaskServerTest::test_getPet": true, 
+  "test_server.py::FlaskServerTest::test_getPets": true, 
+  "test_server.py::FlaskServerTest::test_postPetFail": true, 
+  "test_server.py::FlaskServerTest::test_putPet": true, 
+  "test_server.py::FlaskServerTest::test_putPetFail": true
+}

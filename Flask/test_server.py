@@ -16,16 +16,6 @@ class FlaskServerTest(unittest.TestCase):
         fish = server.Pet('Fishy', 'Fish', 0)
         server.pet_list = [dog, cat, fish]
 
-    def test_hello(self):
-        response = self.app.get('/hello')
-        assert response.status_code == 200, 'status_code was not OK'
-        assert response.data == 'hello'
-
-    def test_hello_name(self):
-        response = self.app.get('/hello/Julia')
-        assert response.status_code == 200, 'status_code was not OK'
-        assert response.data == 'hello Julia'
-
     def test_getPets(self):
         #Test to see if you can get all pets
         response = self.app.get('/pets/')
